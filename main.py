@@ -2,18 +2,18 @@ from flask import Flask, render_template, request
 from tables import db, VEHICLETBL
 
 app = Flask(__name__)
-app.config.from_object('config.ProdConfig')
-db.init_app(app)
+#app.config.from_object('config.ProdConfig')
+#db.init_app(app)
 
 @app.route('/')
 def index():
     return 'Hello Second World'
 
 
-@app.route('/vehicles')
-def vehicles():
-    vehicles = VEHICLETBL.query.all()
-    return render_template('vehicles.html', vehicles=vehicles)
+#@app.route('/vehicles')
+#def vehicles():
+#    vehicles = VEHICLETBL.query.all()
+#    return render_template('vehicles.html', vehicles=vehicles)
 
 
 @app.route('/shopping')
