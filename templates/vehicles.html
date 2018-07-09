@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vehicles</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body>
+<h1>All Vehicles</h1>
+    <ul class="list-group">
+        {% for vehicle in vehicles %}
+        <li class="list-group-item">Vehicle Vin: {{ vehicle.VEHICLE_VIN}}</li>
+        <li class="list-group-item">Vehicle Name: {{ vehicle.VEHICLE_NAME}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
