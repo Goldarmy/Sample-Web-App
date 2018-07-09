@@ -5,6 +5,7 @@ app = Flask(__name__)
 #app.config.from_object('config.ProdConfig')
 #db.init_app(app)
 
+
 @app.route('/')
 def index():
     return 'Hello Second World'
