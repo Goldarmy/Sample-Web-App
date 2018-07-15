@@ -1,7 +1,6 @@
-from flask_sqlalchemy import SQLAlchemy
+from Sample_Web_App import db
 
-db = SQLAlchemy()
-
+#db = SQLAlchemy()
 
 class VEHICLETBL(db.Model):
     __tablename__ = 'VEHICLE_TBL'
